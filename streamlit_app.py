@@ -292,5 +292,5 @@ elif st.session_state.page == "archive":
         st.markdown("---")
         if st.button("⬅ 목록으로 돌아가기"):
             st.session_state.selected_article = None
-            st.experimental_rerun()
+            st.rerun()
 
