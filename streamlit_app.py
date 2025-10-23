@@ -278,7 +278,7 @@ elif st.session_state.page == "archive":
         for title in archive_articles.keys():
             if st.button(title, use_container_width=True):
                 st.session_state.selected_article = title
-                st.experimental_rerun()
+            st.rerun()
 
         st.markdown("---")
         if st.button("🏠 홈으로 돌아가기", use_container_width=True):
